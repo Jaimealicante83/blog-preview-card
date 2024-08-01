@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  background-color: #F4D04E;
+  height: 100%;
+  min-height: 100vh;
+}
+main .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 384px;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 0.1rem #111111 solid;
+  box-shadow: 7px 6px 0px 3px rgb(17, 17, 17);
+}
+main .container .card img {
+  border-radius: 1rem;
+}
+main .container .card .card-category {
+  align-self: flex-start;
+  display: inline-block;
+  background-color: #F4D04E;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+main .container .card .card-category span {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111111;
+}
+main .container .card span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 1.4rem;
+}
+main .container .card h3 {
+  font-size: 2.4rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  color: #111111;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .container .card h3:hover {
+  color: #F4D04E;
+}
+main .container .card p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #6B6B6B;
+  margin-bottom: 1.2rem;
+}
+main .container .card .person {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+main .container .card .person img {
+  height: 3.2rem;
+  width: auto;
+}
+main .container .card .person p {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111111;
+  align-self: center;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
