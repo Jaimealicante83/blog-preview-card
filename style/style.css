@@ -29,12 +29,18 @@ main .container .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 384px;
+  max-width: 27.9rem;
   background-color: #fff;
   border-radius: 2rem;
-  padding: 2.5rem;
+  padding: 2.4rem 2rem;
   border: 0.1rem #111111 solid;
   box-shadow: 7px 6px 0px 3px rgb(17, 17, 17);
+}
+@media screen and (min-width: 768px) {
+  main .container .card {
+    max-width: 38.4rem;
+    padding: 2.5rem;
+  }
 }
 main .container .card img {
   border-radius: 1rem;
@@ -44,7 +50,7 @@ main .container .card .card-category {
   display: inline-block;
   background-color: #F4D04E;
   margin-bottom: 1.2rem;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
 }
@@ -57,10 +63,10 @@ main .container .card span {
   font-size: 1.4rem;
   font-weight: 600;
   color: #111111;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 main .container .card h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 150%;
   letter-spacing: 0;
   font-weight: 900;
@@ -72,17 +78,22 @@ main .container .card h3 {
 main .container .card h3:hover {
   color: #F4D04E;
 }
+@media screen and (min-width: 768px) {
+  main .container .card h3 {
+    font-size: 2.4rem;
+  }
+}
 main .container .card p {
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 150%;
   color: #6B6B6B;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
 }
 main .container .card .person {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  margin-top: 1rem;
 }
 main .container .card .person img {
   height: 3.2rem;

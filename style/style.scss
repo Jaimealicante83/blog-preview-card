@@ -36,14 +36,18 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            max-width: 384px;
+            max-width: 27.9rem;
             background-color: $white;
             border-radius: 2rem;
-            padding: 2.5rem;
+            padding: 2.4rem 2rem;
             border: .1rem $darkgrey solid;
             -webkit-box-shadow: 7px 6px 0px 3px rgba(17,17,17,1);
             -moz-box-shadow: 7px 6px 0px 3px rgba(17,17,17,1);
             box-shadow: 7px 6px 0px 3px rgba(17,17,17,1);
+            @media screen and (min-width: 768px){
+                max-width: 38.4rem;
+                padding: 2.5rem;
+            }
             img{
                 border-radius: 1rem;
             }
@@ -52,7 +56,7 @@ main{
                 display: inline-block;
                 background-color: $yellow;
                 margin-bottom: 1.2rem;
-                margin-top: 2rem;
+                margin-top: 2.4rem;
                 padding: 0.5rem 1rem;
                 border-radius: .4rem;
                 span{
@@ -65,10 +69,10 @@ main{
                 font-size: 1.4rem;
                 font-weight: 600;
                 color: $darkgrey;
-                margin-bottom: 1.4rem;
+                margin-bottom: 1.2rem;
             }
             h3{
-                font-size: 2.4rem;
+                font-size: 2rem;
                 line-height: 150%;
                 letter-spacing: 0;
                 font-weight: 900;
@@ -79,18 +83,21 @@ main{
                 &:hover{
                     color: $yellow;
                 }
+                @media screen and (min-width: 768px){
+                    font-size: 2.4rem;
+                }
             }
             p{
                 font-size: 1.6rem;
+                font-weight: 500;
                 line-height: 150%;
                 color: $gray;
-                margin-bottom: 1.2rem;
+                margin-bottom: 2.4rem;
             }
             .person{
                 display: flex;
                 align-items: center;
                 gap: 1.2rem;
-                margin-top: 1rem;
                 img{
                     height: 3.2rem;
                     width: auto;
